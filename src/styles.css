@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.65;
+  background-color: #120d0a;
+  color: #f5ebe0;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header: қара-кофе жолақ + янтарь акцент */
+.top-bar {
+  background-color: #1b130e;
+  border-bottom: 1px solid #3b281c;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.top-bar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand-mark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffb703;
+}
+
+.top-nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: #e6ccb2;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: color 0.2s ease;
+}
+
+.top-nav a:hover {
+  color: #ffb703;
+}
+
+/* Main: терең эспрессо-қола градиент */
+.hero-banner {
+  background: radial-gradient(circle at top right, #582f0e 0%, #24160e 55%, #120d0a 100%);
+  padding: 92px 0;
+  text-align: center;
+  border-bottom: 1px solid #2d1e15;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(255, 183, 3, 0.14);
+  color: #ffb703;
+  border: 1px solid rgba(255, 183, 3, 0.4);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  color: #fff8f0;
+  margin-bottom: 16px;
+}
+
+.hero-banner p {
+  max-width: 690px;
+  margin: 0 auto 30px;
+  color: #ddb892;
+  font-size: 1.06rem;
+}
+
+.cta-pill {
+  display: inline-block;
+  background-color: #ffb703;
+  color: #120d0a;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 13px 28px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-pill:hover {
+  background-color: #ffc93c;
+  transform: translateY(-2px);
+}
+
+/* About: жылы крем-қоңыр бөлім */
+.story-block {
+  background-color: #19110c;
+  padding: 72px 0;
+  border-bottom: 1px solid #2b1d14;
+}
+
+.story-block h2 {
+  font-size: 1.9rem;
+  color: #ffb703;
+  margin-bottom: 14px;
+}
+
+.story-block p {
+  max-width: 820px;
+  color: #ede0d4;
+  font-size: 1.03rem;
+}
+
+/* Services: карточкалар торы */
+.catalog-block {
+  background-color: #120d0a;
+  padding: 72px 0;
+}
+
+.catalog-block h2 {
+  font-size: 1.9rem;
+  color: #fff8f0;
+  margin-bottom: 30px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.offer-card {
+  background-color: #1e1510;
+  border: 1px solid #38261b;
+  border-left: 4px solid #fb8500;
+  border-radius: 12px;
+  padding: 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffb703;
+}
+
+.offer-card h3 {
+  color: #ffb703;
+  font-size: 1.18rem;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  color: #d6ccc2;
+  font-size: 0.95rem;
+}
+
+/* Footer: қою базалық жолақ */
+.bottom-bar {
+  background-color: #0b0705;
+  border-top: 2px solid #fb8500;
+  padding: 24px 0;
+  color: #cbbba8;
+  font-size: 0.95rem;
+}
+
+.bottom-bar-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}

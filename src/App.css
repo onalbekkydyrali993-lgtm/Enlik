@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 1. Header — қою көк жоғарғы панель */
+.site-header {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #38bdf8;
+}
+
+/* 2. Main — градиентті басты баннер */
+.main-hero {
+  background: linear-gradient(135deg, #1d4ed8, #0284c7);
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.main-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 16px;
+}
+
+.main-hero p {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  font-size: 1.05rem;
+  color: #e0f2fe;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1d4ed8;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background-color: #f1f5f9;
+}
+
+/* 3. About — ашық ақ-сұр бөлім */
+.about-section {
+  background-color: #ffffff;
+  padding: 64px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+.about-section p {
+  max-width: 780px;
+  color: #374151;
+}
+
+/* 4. Services — жұмсақ сұр фон және карточкалар торы */
+.services-section {
+  background-color: #f1f5f9;
+  padding: 64px 0;
+}
+
+.services-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: #0f172a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  color: #0f172a;
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* 5. Footer — төменгі ақпараттық жолақ */
+.site-footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  padding: 24px 0;
+  font-size: 0.95rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
